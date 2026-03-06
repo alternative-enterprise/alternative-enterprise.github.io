@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Clock - Support</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #e3f2fd 0%, #e8eaf6 50%, #f3e5f5 100%);
+      color: #424242;
+      min-height: 100vh;
+      line-height: 1.8;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header h1 {
+      font-size: 28px;
+      color: #1565c0;
+      margin-bottom: 8px;
+    }
+    .header p {
+      font-size: 14px;
+      color: #888;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 16px;
+    }
+    .lang-switch a {
+      color: #1565c0;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .lang-switch a:hover { text-decoration: underline; }
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    }
+    .card h2 {
+      font-size: 18px;
+      color: #1565c0;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e3f2fd;
+    }
+    .card p { margin-bottom: 12px; font-size: 14px; }
+    .card p:last-child { margin-bottom: 0; }
+    .card ul {
+      padding-left: 24px;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+    .card ul:last-child { margin-bottom: 0; }
+    .card li { margin-bottom: 4px; }
+    .faq-item { margin-bottom: 20px; }
+    .faq-item:last-child { margin-bottom: 0; }
+    .faq-q {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 4px;
+    }
+    .faq-q::before {
+      content: "Q. ";
+      color: #1565c0;
+    }
+    .faq-a { padding-left: 24px; font-size: 14px; }
+    .faq-a::before {
+      content: "A. ";
+      color: #5e35b1;
+      font-weight: bold;
+      margin-left: -24px;
+    }
+    .contact-email {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1565c0;
+      padding: 8px 20px;
+      border-radius: 24px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+    .contact-email:hover {
+      background: #bbdefb;
+    }
+    .links {
+      text-align: center;
+      margin-top: 16px;
+    }
+    .links a {
+      color: #1565c0;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 14px;
+    }
+    .links a:hover { text-decoration: underline; }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switch">
+      <a href="../">日本語</a>
+    </div>
+
+    <div class="header">
+      <h1>Welcome Clock</h1>
+      <p>Clock &amp; Photo Slideshow App</p>
+    </div>
+
+    <div class="card">
+      <h2>About the App</h2>
+      <p>
+        Welcome Clock is a clock and photo slideshow application.
+        Display the current time beautifully over your favorite
+        photos from your device's photo library.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Key Features</h2>
+      <ul>
+        <li>
+          <strong>Clock Display</strong> —
+          Choose from multiple font styles including Roboto Mono,
+          Orbitron, Share Tech Mono, and VT323
+        </li>
+        <li>
+          <strong>Photo Slideshow</strong> —
+          Automatically cycle through photos from your device's
+          library at your preferred interval
+        </li>
+        <li>
+          <strong>Customization</strong> —
+          Adjust clock style, font size, colors, display position,
+          and slideshow settings
+        </li>
+        <li>
+          <strong>Ad-Free Option</strong> —
+          Remove ads with an optional in-app purchase
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <p class="faq-q">How do I select photos for the slideshow?</p>
+        <p class="faq-a">
+          Open the Settings screen and tap the photo selection option.
+          You can choose photos from your device's photo library.
+          All photos are processed locally on your device and are
+          never uploaded to any server.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">How do I change the clock style?</p>
+        <p class="faq-a">
+          Open the Settings screen to customize the clock font,
+          size, color, and position on the screen.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">How do I remove ads?</p>
+        <p class="faq-a">
+          You can remove ads by purchasing the Pro version through
+          the in-app purchase option in the Settings screen.
+          This is a one-time purchase.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">I purchased Pro but ads are still showing</p>
+        <p class="faq-a">
+          Try the following steps:<br>
+          - Close and reopen the app<br>
+          - Go to Settings and tap "Restore Purchases"<br>
+          - Make sure you are signed in with the same Apple ID /
+          Google account used for the purchase<br>
+          - If the issue persists, please contact us at the
+          email below
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">The app is not displaying my photos</p>
+        <p class="faq-a">
+          Please check the following:<br>
+          - Make sure you have granted the app permission to access
+          your photo library<br>
+          - Go to your device's Settings &gt; Privacy &gt; Photos
+          and ensure Welcome Clock has access<br>
+          - Try restarting the app
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">The clock is not visible or hard to read</p>
+        <p class="faq-a">
+          Try adjusting the clock color or position in the Settings
+          screen to improve visibility against your photo backgrounds.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>System Requirements</h2>
+      <ul>
+        <li><strong>iOS</strong>: iOS 16.0 or later</li>
+        <li><strong>Android</strong>: Android 5.0 (API 21) or later</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Contact Us</h2>
+      <p>
+        If you need further assistance or have feedback,
+        please contact us. We typically respond within
+        2-3 business days.
+      </p>
+      <p style="text-align: center; margin-top: 12px;">
+        <a class="contact-email" href="mailto:hello@alternative.ne.jp">
+          hello@alternative.ne.jp
+        </a>
+      </p>
+    </div>
+
+    <div class="links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2026 Welcome Clock. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>

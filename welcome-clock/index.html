@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Clock - サポート</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans',
+        'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+      background: linear-gradient(135deg, #e3f2fd 0%, #e8eaf6 50%, #f3e5f5 100%);
+      color: #424242;
+      min-height: 100vh;
+      line-height: 1.8;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header h1 {
+      font-size: 28px;
+      color: #1565c0;
+      margin-bottom: 8px;
+    }
+    .header p {
+      font-size: 14px;
+      color: #888;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 16px;
+    }
+    .lang-switch a {
+      color: #1565c0;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .lang-switch a:hover { text-decoration: underline; }
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    }
+    .card h2 {
+      font-size: 18px;
+      color: #1565c0;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e3f2fd;
+    }
+    .card p { margin-bottom: 12px; font-size: 14px; }
+    .card p:last-child { margin-bottom: 0; }
+    .card ul {
+      padding-left: 24px;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+    .card ul:last-child { margin-bottom: 0; }
+    .card li { margin-bottom: 4px; }
+    .faq-item { margin-bottom: 20px; }
+    .faq-item:last-child { margin-bottom: 0; }
+    .faq-q {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 4px;
+    }
+    .faq-q::before {
+      content: "Q. ";
+      color: #1565c0;
+    }
+    .faq-a { padding-left: 24px; font-size: 14px; }
+    .faq-a::before {
+      content: "A. ";
+      color: #5e35b1;
+      font-weight: bold;
+      margin-left: -24px;
+    }
+    .contact-email {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1565c0;
+      padding: 8px 20px;
+      border-radius: 24px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+    .contact-email:hover {
+      background: #bbdefb;
+    }
+    .links {
+      text-align: center;
+      margin-top: 16px;
+    }
+    .links a {
+      color: #1565c0;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 14px;
+    }
+    .links a:hover { text-decoration: underline; }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switch">
+      <a href="en/">English</a>
+    </div>
+
+    <div class="header">
+      <h1>Welcome Clock</h1>
+      <p>写真と時計のスライドショーアプリ</p>
+    </div>
+
+    <div class="card">
+      <h2>アプリについて</h2>
+      <p>
+        Welcome Clockは、お気に入りの写真の上に現在時刻を
+        美しく表示する時計＆フォトスライドショーアプリです。
+        複数のフォントスタイルやカスタマイズオプションで、
+        あなただけの時計画面を作ることができます。
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>主な機能</h2>
+      <ul>
+        <li>
+          <strong>時計表示</strong> —
+          Roboto Mono、Orbitron、Share Tech Mono、VT323 など
+          複数のフォントから選べます
+        </li>
+        <li>
+          <strong>フォトスライドショー</strong> —
+          端末のフォトライブラリから写真を自動的に切り替えて表示します
+        </li>
+        <li>
+          <strong>カスタマイズ</strong> —
+          フォントサイズ、色、表示位置、スライドショーの間隔などを
+          自由に調整できます
+        </li>
+        <li>
+          <strong>広告非表示オプション</strong> —
+          アプリ内課金で広告を永続的に非表示にできます
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>よくある質問</h2>
+
+      <div class="faq-item">
+        <p class="faq-q">スライドショーの写真を選ぶには？</p>
+        <p class="faq-a">
+          設定画面を開き、写真選択オプションをタップしてください。
+          端末のフォトライブラリから写真を選べます。
+          すべての写真は端末上でのみ処理され、
+          外部サーバーにアップロードされることはありません。
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">時計のスタイルを変更するには？</p>
+        <p class="faq-a">
+          設定画面から、時計のフォント、サイズ、色、
+          表示位置をカスタマイズできます。
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">広告を非表示にするには？</p>
+        <p class="faq-a">
+          設定画面のアプリ内課金オプションからPro版を購入すると、
+          広告が永続的に非表示になります。一度の購入で完了します。
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Pro版を購入したのに広告が表示されます</p>
+        <p class="faq-a">
+          以下の手順をお試しください：<br>
+          ・アプリを閉じて再度開く<br>
+          ・設定画面で「購入を復元する」をタップ<br>
+          ・購入時と同じ Apple ID / Google アカウントで
+          ログインしているか確認<br>
+          ・解決しない場合は下記メールアドレスまでお問い合わせください
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">写真が表示されません</p>
+        <p class="faq-a">
+          以下をご確認ください：<br>
+          ・アプリにフォトライブラリへのアクセス許可が
+          付与されているか確認<br>
+          ・端末の設定 &gt; プライバシー &gt; 写真で
+          Welcome Clock のアクセスを許可<br>
+          ・アプリを再起動してみてください
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">時計が見えにくい・読みにくい</p>
+        <p class="faq-a">
+          設定画面で時計の色や表示位置を調整してみてください。
+          写真の背景に対して見やすい設定を選べます。
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>動作環境</h2>
+      <ul>
+        <li><strong>iOS</strong>: iOS 16.0 以上</li>
+        <li><strong>Android</strong>: Android 5.0（API 21）以上</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>お問い合わせ</h2>
+      <p>
+        ご質問・ご要望・不具合のご報告がございましたら、
+        下記メールアドレスまでお気軽にご連絡ください。
+        通常2〜3営業日以内に返信いたします。
+      </p>
+      <p style="text-align: center; margin-top: 12px;">
+        <a class="contact-email" href="mailto:hello@alternative.ne.jp">
+          hello@alternative.ne.jp
+        </a>
+      </p>
+    </div>
+
+    <div class="links">
+      <a href="privacy-policy.html">プライバシーポリシー</a>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2026 Welcome Clock. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
